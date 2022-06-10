@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h2>Profile Page / პროფილი</h2>
+<div>
+    <p>Your account details are below / თქვენი ანგარიშის ინფორმაცია:</p>
+    <table>
+        <tr>
+            <td>Username / მომხმარებლის სახელი:</td>
+            <td>{{ account['username'] }}</td>
+        </tr>
+        <tr>
+            <td>Password / პაროლი:</td>
+            <td>{{ account['password'] }}</td>
+        </tr>
+        <tr>
+            <td>Email / მეილი:</td>
+            <td>{{ account['email'] }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
