@@ -109,4 +109,4 @@ def profile():
     return redirect(url_for('login'))
 
 
-app.permanent_session_lifetime = timedelta(seconds=40)
+app.permanent_session_lifetime = timedelta(minutes=2)
